@@ -13,6 +13,12 @@ contract BlockNovaChain {
         uint256 timestamp;
         string data;
     }
+contract BlockNovaChain {
+    struct Record {
+        address creator;
+        uint256 timestamp;
+        string data;
+    }
 
     mapping(uint256 => Record) private records;
     uint256 public recordCount;
@@ -54,4 +60,5 @@ contract BlockNovaChain {
         return recordCount;
     }
 }
+
 
