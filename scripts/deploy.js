@@ -7,6 +7,7 @@ async function main() {
   let config = {};
 
   if (fs.existsSync(configPath)) {
+
     config = JSON.parse(fs.readFileSync(configPath, "utf8"));
   }
 
@@ -42,6 +43,7 @@ main()
     console.error("❌ Deployment failed:", error);
     process.exit(1);
   });
+
 
 
 
