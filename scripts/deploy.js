@@ -27,7 +27,7 @@ async function main() {
   console.log(`📍 Contract Address: ${address}`);
 
   // Save deployment info
-  config.projectName = "BlockNovaChain";
+   config.projectName = "BlockNovaChain";
   config.network = hre.network.name;
   config.contractAddress = address;
   config.deploymentDate = new Date().toISOString();
@@ -42,5 +42,6 @@ main()
     console.error("❌ Deployment failed:", error);
     process.exit(1);
   });
+
 
 
