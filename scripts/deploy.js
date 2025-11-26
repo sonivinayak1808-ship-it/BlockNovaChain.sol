@@ -15,8 +15,7 @@ async function main() {
   console.log(`🚀 Deploying Project: BlockNovaChain`);
   console.log(`🌐 Network: ${hre.network.name}`);
   console.log("=====================================\n");
-
-  await hre.run("compile");
+await hre.run("compile");
 
   const ContractFactory = await hre.ethers.getContractFactory("BlockNovaChain");
   const contract = await ContractFactory.deploy();
@@ -43,6 +42,7 @@ main()
     console.error("❌ Deployment failed:", error);
     process.exit(1);
   });
+
 
 
 
